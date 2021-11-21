@@ -7,7 +7,7 @@ public class CSVExporter {
 
     public String export (List<Movie> recomendations){
         return recomendations.stream()
-                .map(p -> (p.getTitle() + "," + p.getGenre() + "," + p.getDirector()))
+                .map(p -> (p.getTitle() + "," + p.getDirector() + "," + p.getGenre()))
                 .collect(Collectors.joining("\n"));
     }
 }
